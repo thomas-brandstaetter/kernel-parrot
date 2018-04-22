@@ -23,4 +23,4 @@ cat /dev/parrots
 # Known issues
 
 * There is a compile warning because the show param of DRIVER_ATTR is NULL. But this does not matter, since we use sysfs for writing only.
-* Documentation follow doxygen format, but for kernel modules it is adviced to use kernel doc format
+* Documentation follows doxygen format, but for kernel modules it is adviced to use kernel-doc format
