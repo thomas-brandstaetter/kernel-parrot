@@ -7,19 +7,19 @@ This kernel module has two parts.
 # Testing
 
 First build, install and check for loaded kernel module:
-
-  make 
-  sudo make install
-  make checkinstall
-  
+```
+make 
+sudo make install
+make checkinstall
+  ```
 Then fill the kernel-fifo with messages
-
-  echo "Today is a good day to develop!" > /sys/devices/virtual/parrot/parrot/fifo
-  
+```
+echo "Today is a good day to develop!" > /sys/devices/virtual/parrot/parrot/fifo
+```
 After filling the modules fifo we can read (pop) messages from the module. 
-
-  cat /dev/parrots
-
+```
+cat /dev/parrots
+```
 # Known issues
 
 * There is a compile warning because the show param of DRIVER_ATTR is NULL. But this does not matter, since we use sysfs for writing only.
