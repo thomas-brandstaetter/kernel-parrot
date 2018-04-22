@@ -20,6 +20,11 @@ After filling the modules fifo we can read (pop) messages from the module.
 ```
 cat /dev/parrots
 ```
+Finally remove the module with 
+```
+sudo make uninstall
+```
+
 # Known issues
 
 * There is a compile warning because the show param of DRIVER_ATTR is NULL. But this does not matter, since we use sysfs for writing only.
