@@ -52,7 +52,7 @@ module_param(debug, bool, S_IRUGO | S_IWUSR);
 /** @} */
 
 
-/** \defgroup Flag for only read a sinlge message after open() */
+/** \defgroup Flag for read only a sinlge message after open() */
 /** @{ */
 
 /** Flag for one_shot mode */
@@ -167,7 +167,7 @@ static struct file_operations fops = {
 /** \defgroup sysfs entries  */
 
 /**
- * Placing data into the read FIFO is done through sysfs
+ * Placing data into the FIFO is done through sysfs
  * @param dev
  * @param attr
  * @param buffer
